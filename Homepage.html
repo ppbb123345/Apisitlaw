@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApisitLaw</title>
+    <link rel="stylesheet" href="Homepage.css">
+
+</head>
+<body>
+        <div class="page">
+            <div class="logo">
+                <a href="Homepage.html"><img src="img/logo1.png" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <a href="Homepage.html">หน้าหลัก</a>
+                <!-- <a href="about.html">เกี่ยวกับเรา</a>
+                <a href="">บริการของเรา</a> -->
+                <a href="perfomanc.html">ผลงาน</a>
+                <a href="contact.html">ติดต่อเรา</a>
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="img/braner12.png" alt="banner12"></div>
+                <div class="slide"><img src="img/banner2.png" alt="banner2"></div>
+                <div class="slide"><img src="img/braner4.png" alt="banner4"></div>
+                <div class="slide"><img src="img/civil1.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner5.png" alt="banner5"></div>
+                <div class="slide"><img src="img/civil2.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner6.png" alt="banner6"></div>
+                <div class="slide"><img src="img/civil3.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner7.png" alt="banner7"></div>
+                <div class="slide"><img src="img/civil4.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner8.png" alt="banner8"></div>
+                <div class="slide"><img src="img/criminal1.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner9.png" alt="banner9"></div>
+                <div class="slide"><img src="img/criminal2.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner10.png" alt="banner10"></div>
+                <div class="slide"><img src="img/criminal3.png" alt="banner4"></div>
+                <div class="slide"><img src="img/braner11.png" alt="banner11"></div>
+                <div class="slide"><img src="img/criminal4.png" alt="banner4"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <script>
+            let index = 0;
+            function moveSlide(direction) {
+                const slides = document.querySelectorAll(".slide");
+                const slider = document.querySelector(".slider");
+                index += direction;
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                slider.style.transform = `translateX(${-index * 100}%)`;
+            }
+        </script>
+
+        <div class="branner">
+            <img src="img/braner3.png" alt="branner">
+        </div>
+
+        <div class="container">
+            <h2 class="heading">สำนักงานทนายความ อภิสิทธิ์<br>Apisit Law</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="blog-card">
+                        <img src="img/performanc1.jpg" >
+                        <h3>ติดต่อเรา</h3>
+                        <a href="contact.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="blog-card">
+                        <img src="img/per.PNG" >
+                        <h3>ผลงานของเรา</h3>
+                        <a href="perfomanc.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="blog-card">
+                        <img src="img/performanc2.jpeg" >
+                        <h3>เกี่ยวกับเรา</h3>
+                        <a href="about.html" class="read-more">Read More</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    
+
+        <div class="lawlayout">
+            <h1>LEGAL ADVICE</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/law2.PNG" alt="">
+                    <div class="caption"><a href="criminal.html">คดีอาญา</a></div>
+                </div>
+                <div class="card">
+                    <img src="img/law1.PNG" alt="">
+                    <div class="caption"><a href="civil.html">คดีแพ่ง</a></div>
+                </div>
+                <div class="card">
+                    <img src="img/law3.PNG" alt="">
+                    <div class="caption"><a href="other.html">คดีพิเศษ</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data" style="text-align: center; margin-top: 20px;"> 
+            <span style=
+            "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            font-size: 25px;
+            font-weight: bold;">ทนายอภิธิทธิ์ ศิริโพธิ์สพ </span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            font-size: 25px;
+            color: blue;
+            font-weight: bold;">(ทนายโบว์)</span>
+        </div>
+
+        <div class="data1" style="text-align: center; margin-top: 20px;">
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            font-weight: bold;">มีปัญหาทางด้านกฎหมาย ต้องการปรึกษา ติดต่อ</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            color: blue;
+            font-weight: bold;">ทนายโบว์</span>
+            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: red;">โทร:081-9505859, 081-4931189</h2>
+        </div>
+
+        <div class="phone-buttons">
+            <a href="tel:0819505859" class="phone-button">
+                <i>📞</i> 081-950-5859
+            </a>
+            <a href="tel:0814931189" class="phone-button">
+                <i>📞</i> 081-493-1189
+            </a>
+        </div>
+
+        <div class="data1" style="text-align: center; margin-top: 20px;">
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            font-weight: bold;">หรือ</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 28px;
+            color:red;
+            font-weight: bold;">กดปุ่มแอดไลน์นี้</span>
+        </div>
+        
+        <div class="line-container">
+            <a href="https://line.me/ti/p/5mO_CErwea" class="line-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE Logo">
+                คลิกเพื่อแอดไลน์
+            </a>
+        </div>
+
+        <div class="line-container">
+            <a href="https://line.me/ti/p/5mO_CErwea" class="line-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE Logo">
+                Click to add Line
+            </a>
+        </div>
+
+
+        <div class="footer-main">
+            <p>ทนายอภิธิทธิ์ ศิริโพธิ์สพ</p>
+            <p>รับว่าความทั่วราชอาณาจักร</p>
+            <p>Tel : 081-9505859</p>
+            <p>Tel : 081-4931189</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/15yxn2HxYj/?mibextid=wwXIfr" target="_blank"><img src="img/logofacebook.png" alt="facebook" ></a>
+                <!-- <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><img style="width: 45px; height: 43px;" src="img/logogmail.png" alt="gmail"></a> -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lawyerapisit@gmail.com&su=ติดต่อสอบถาม&body=เรียนทนายอภิสิทธิ์%0Aขอสอบถามข้อมูลเพิ่มเติมเกี่ยวกับ..." target="_blank" class="contact-button email">
+                    <img style="width: 45px; height: 43px;" src="img/logogmail.png" alt="gmail">
+                </a>
+                
+                <a href="https://line.me/ti/p/5mO_CErwea" target="_blank"><img src="img/logoline1.png" alt="line"></a>
+            </div>
+            <div class="menu">
+                <a href="Homepage.html">หน้าหลัก</a> |
+                <!-- <a href="about.html">เกี่ยวกับเรา</a>
+                <a href="">บริการของเรา</a> -->
+                <a href="perfomanc.html">ผลงาน</a>
+                <a href="contact.html">ติดต่อเรา</a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;ทนายอภิสิทธิ์ ศิริโพธิ์สพ</p>
+            <p>(Apisit Siriposop)</p>
+        </div>
+
+
+</body>
+</html>

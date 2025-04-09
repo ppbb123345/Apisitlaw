@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+}
+
+.page {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1000;
+}
+
+.page a{
+    color: aliceblue;
+}
+
+.page a:hover{
+    color: yellow;
+}
+
+.page .logo {
+    display: flex;
+    align-items: center;
+}
+
+.page .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.page .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.page .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.page .menu a:hover {
+    color: yellow;
+}
+
+.page .logo{
+    height: 80px;
+    margin-left: 0px;
+    width: 100px;
+}
+
+.frame-container, .frame-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* ระยะห่างระหว่างกรอบ */
+    justify-content: center; /* จัดให้อยู่ตรงกลางเมื่อจอเล็ก */
+}
+
+.frame, .frame1, .frame2{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border: 10px solid gold;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.frame img, .frame1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ปรับขนาดเมื่อหน้าจอเล็กลง */
+@media (max-width: 1024px) {
+    .frame, .frame1 {
+        max-width: 90%; /* ปรับขนาดให้พอดีกับจอ */
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-container, .frame-container1 {
+        flex-direction: column; /* เรียงแนวตั้งเมื่อจอเล็ก */
+        align-items: center;
+    }
+
+    .frame, .frame1 {
+        max-width: 95%;
+        margin-left: 0;
+    }
+}
+
+.footer-main{
+    background: #003;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer-main p{
+    margin: 5px 0px;
+}
+
+.footer-main .social-icons{
+    margin-top: 20px;
+}
+
+.footer-main .social-icons a{
+    display: inline-block;
+    margin: 0px 5px;
+} 
+
+.footer-main .social-icons img{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-main .menu{
+    margin-top: 10px;
+}
+
+.footer-main .menu a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 16px;
+}
+
+.footer-main .menu a:hover{
+    color: #fbc02d;
+}
+
+.footer{
+    background: #000;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
